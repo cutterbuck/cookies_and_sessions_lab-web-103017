@@ -25,7 +25,8 @@ Rails.application.routes.draw do
   #       get 'sold'
   #     end
   #   end
-
+get "/", to: "products#index"
+post "/add", to: "products#add"
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
